@@ -1,0 +1,37 @@
+.navegacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--primarioOscuro);
+  padding: 1.5rem 0;
+  border-radius: 12px;
+  margin: 2rem auto;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.navegacion__enlace {
+  color: var(--blanco);
+  text-transform: uppercase;
+  font-family: var(--fuentePrincipal);
+  font-size: 1.8rem;
+  letter-spacing: 0.08em;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.navegacion__enlace:hover {
+  color: var(--secundario);
+  transform: translateY(-2px);
+}
+
+.navegacion__enlace--activo {
+  color: var(--secundario);
+  border-bottom: 3px solid var(--secundario);
+}
+
+@media (max-width: 768px) {
+  .navegacion {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

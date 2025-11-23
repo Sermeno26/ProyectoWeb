@@ -1,0 +1,1380 @@
+/**Root son variables  con valores que se puedem reutilizar y si necesita cambio solo se modifica aqui**/
+:root {
+    --primario: #f9f7f6;
+    --primarioOscuro: #1C1C1C;
+    --secundario: #C5A46D;
+    --secundarioOscuro: #000;
+    --blanco: #FFF;
+    --negro: #000;
+    --rojo: #980404;
+    /**Fuente extraida de google fonts**/
+    --fuentePrincipal: 'Staatliches', cursive;
+    /*slider de novedades*/
+    --alto-slider: 420px;
+    --radio: 14px;
+    --velocidad: 600ms;
+}
+
+/**agregando Box-sizing : border-box para que calcule el width de manera automatica(Preguntar bien su uso ) **/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/** Globales : quiere decir que agregaremos propiedades o valores que afectan a todo el front y no solo a un elemento **/
+body {
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--rojo);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 43rem;
+    /**objet fit ajusta todas las imagene sin perder proporcion **/
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.contenedor {
+    max-width: 140rem;
+    /**marign : 0 auto hace que se centre el contenedor **/
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+/** Header **/
+.header {
+    background-size: cover;        /* ✅ ocupa todo sin deformar */
+    display: flex;
+    justify-content: center;
+    align-items: center;           /* centra verticalmente */
+    padding: 2rem;                 /* espacio interno opcional */
+}
+
+.header__logo {
+    width: 12rem;                  /* ✅ ancho razonable */
+    max-width: 100%;               /* nunca se sale del contenedor */
+    margin: 0;                     /* elimina exceso de margen */
+}
+
+/** Footer **/
+/* =====================
+   FOOTER MINIMALISTA
+   ===================== */
+/* ===== Footer alternativo minimal ===== */
+.footer.alt{
+  background: var(--primarioOscuro);
+  color: var(--blanco);
+  padding: 28px 16px;
+  margin-top: 4rem;
+  border-top: 1px solid rgba(255,255,255,.06);
+}
+
+.footer.alt .footer__wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  gap: 16px;
+}
+
+.footer.alt .footer__brand{
+  font-family: var(--fuentePrincipal);
+  font-size: clamp(2rem, 2.8vw, 3rem);
+  color: var(--secundario);
+  text-decoration: none;
+  letter-spacing: .5px;
+}
+
+.footer.alt .footer__divider{
+  width: min(560px, 90%);
+  margin: 0 auto;
+  border: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255,255,255,.16),
+    transparent
+  );
+}
+
+.footer.alt .footer__nav{
+  display: flex;
+  justify-content: center;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+
+.footer.alt .chip{
+  display: inline-block;
+  padding: .5rem 1rem;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 999px;
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 1.4rem;
+  opacity: .9;
+  transition: color .25s ease, border-color .25s ease, background .25s ease;
+}
+.footer.alt .chip:hover{
+  color: var(--primarioOscuro);
+  background: var(--secundario);
+  border-color: var(--secundario);
+}
+
+.footer.alt .footer__social{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.footer.alt .icon{
+  width: 36px; height: 36px;
+  display: grid; place-items: center;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 10px;
+  color: #e8e8e8;
+  text-decoration: none;
+  transition: border-color .25s ease, color .25s ease, background .25s ease, transform .12s ease;
+}
+.footer.alt .icon:hover{
+  color: var(--primarioOscuro);
+  background: var(--secundario);
+  border-color: var(--secundario);
+  transform: translateY(-1px);
+}
+
+.footer.alt .footer__copy{
+  font-size: 1.2rem;
+  opacity: .6;
+}
+
+/* Responsive: espaciado extra en pantallas grandes */
+@media (min-width: 900px){
+  .footer.alt{ padding: 36px 16px; }
+}
+
+
+/** Footer **/
+
+
+/* ===== NAV coherente con el resto del sitio ===== */
+.navegacion{
+  /* usa tus variables */
+  --bg: color-mix(in srgb, var(--primarioOscuro) 92%, transparent);
+  --ink: var(--blanco);
+  --accent: var(--secundario);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: clamp(1rem, 4vw, 2.25rem);
+  padding: .9rem 1.25rem;
+
+  background: var(--bg);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+
+  /* sutil curvatura para que dialogue con tus cards */
+  border-radius: 14px;
+  max-width: 140rem;
+  margin: 0 auto;
+  transition: padding .25s ease, box-shadow .25s ease, background-color .25s ease;
+}
+
+/* compacta levemente al hacer scroll (opcional si incluyes el JS) */
+.navegacion.is-scrolled{
+  padding: .65rem 1.25rem;
+  box-shadow: 0 10px 28px rgba(178, 43, 43, 0.12);
+}
+
+.navegacion__enlace{
+  position: relative;
+  font-family: var(--fuentePrincipal); /* Staatliches */
+  font-weight: 600;
+  letter-spacing: .5px;
+  font-size: clamp(1rem, 2.4vw, 1.6rem);
+  color: var(--ink);
+  text-decoration: none;
+  padding: .15rem .2rem;
+  opacity: .95;
+  transition: color .25s ease, opacity .25s ease;
+}
+
+/* subrayado dorado minimal, redondeado como tus tarjetas */
+.navegacion__enlace::after{
+  content:"";
+  position:absolute;
+  left:0; right:0; bottom:-.35rem;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 999px;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform .28s ease;
+}
+
+.navegacion__enlace:hover,
+.navegacion__enlace:focus-visible{
+  color: var(--accent);
+  opacity: 1;
+}
+.navegacion__enlace:hover::after,
+.navegacion__enlace:focus-visible::after,
+.navegacion__enlace--activo::after{
+  transform: scaleX(1);
+}
+
+/* accesibilidad / preferencias */
+@media (prefers-reduced-motion: reduce){
+  .navegacion, .navegacion__enlace, .navegacion__enlace::after{
+    transition: none !important;
+  }
+}
+
+.navegacion__enlace {
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 3rem;
+}
+
+.navegacion__enlace--activo,
+.navegacion__enlace:hover {
+    color: var(--secundario);
+}
+
+/** Grid **/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/** Productos **/
+/*color de la etiqueta */
+.producto {
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 1rem;
+    display: inline-block;
+    overflow: hidden;
+    /* evita que se salga la animación */
+    border-radius: 10px;
+    /* esquinas redondeadas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-height: 35rem;
+}
+
+.producto:hover {
+    transform: translateY(-10px) scale(1.02);
+    /* se eleva un poco */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+    /* sombra más marcada */
+}
+
+.producto__nombre {
+    font-size: 4rem;
+}
+
+.producto__precio {
+    font-size: 2.8rem;
+    color: var(--secundario);
+}
+
+.producto__nombre,
+.producto__precio {
+    font-family: var(--fuentePrincipal);
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.producto__imagen {
+    width: 100%;
+    max-height: 70%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.producto:hover .producto__imagen {
+    transform: scale(1.2);
+    border-radius: scale(1.5);
+    /* zoom suave en la imagen */
+}
+/* Texto con efecto de aparición */
+.producto__informacion {
+  text-align: center;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.producto:hover .producto__nombre {
+  color: #b8860b; /* dorado en hover */
+}
+
+.producto:hover .producto__precio {
+  color: #d4af37; /* dorado más brillante */
+}
+
+/** Graficos **/
+.grafico {
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / 3;
+}
+
+.grafico--Logo1 {
+    grid-row: 2 / 3;
+    background-image: url(/imagenes/MercaUca.jpg);
+    border-radius: 25px;
+    background-size: cover;
+    /* ocupa TODO el div */
+    background-position: center;
+    /* centra la imagen */
+    background-repeat: no-repeat;
+}
+
+.grafico--Logo2 {
+    grid-row: 8 / 9;
+    background-image: url(/imagenes/MercaUca.jpg);
+    border-radius: 25px;
+    background-size: cover;
+    /* ocupa TODO el div */
+    background-position: center;
+    /* centra la imagen */
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+    .grafico--Logo2 {
+        grid-row: 5 / 6;
+        grid-column: 2 / 4;
+    }
+}
+
+/** Nosotros **/
+.nosotros {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+@media (min-width: 768px) {
+    .nosotros {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.nosotros__imagen {
+    grid-row: 1 / 2;
+}
+
+@media (min-width: 768px) {
+    .nosotros__imagen {
+        grid-column: 2 / 3;
+    }
+}
+
+/** Bloques **/
+.bloques {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .bloques {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.bloque {
+    text-align: center;
+}
+
+.bloque__titulo {
+    margin: 0;
+}
+
+/** Pagina del Producto **/
+@media (min-width: 768px) {
+    .camisa {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.formulario__campo {
+    border: 1rem solid var(--primarioOscuro);
+    background-color: transparent;
+    color: var(--primarioOscuro);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    appearance: none;
+}
+
+.formulario__submit {
+    background-color: var(--secundario);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    padding: 2rem;
+    transition: background-color .3s ease;
+    grid-column: 1 / 3;
+}
+
+.formulario__submit:hover {
+    cursor: pointer;
+    background-color: var(--secundarioOscuro);
+}
+
+/** Slider **/
+
+
+/* ===========================
+   SLIDER DESTACADOS
+   =========================== */
+#destacados {
+    --alto-slider: 420px;
+    --radio: 14px;
+    --velocidad: 600ms;
+}
+
+/* Contenedor principal */
+#destacados .slider {
+    position: relative;
+    max-width: 140rem;
+    margin: 40px auto;
+    border-radius: var(--radio);
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .15);
+}
+
+#destacados .track {
+    display: flex;
+    transition: transform var(--velocidad) ease;
+}
+
+#destacados .slide {
+    flex: 0 0 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: var(--alto-slider);
+}
+
+/* Columna izquierda */
+#destacados .slide__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    color: #fff;
+}
+
+/* ===========================
+   Tipografía dentro del slider
+   =========================== */
+#destacados h1,
+#destacados h2 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 700;
+    margin: 0 0 12px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+#destacados h1 {
+    font-size: 2.4rem;
+    /* más grande */
+    letter-spacing: 1px;
+}
+
+#destacados img {
+    border-radius: 0%;
+}
+
+#destacados h2 {
+    font-size: 4rem;
+    /* un poco más pequeño */
+    letter-spacing: 0.5px;
+}
+
+#destacados p {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 1.9rem;
+    line-height: 1.5;
+    margin: 0 0 20px;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+/* Botón */
+#destacados .btn {
+    display: block;
+    /* hace que el botón ocupe línea completa */
+    margin: 0 auto;
+    /* lo centra horizontalmente */
+    padding: 8px 16px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #fff;
+    color: #111;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.6rem;
+    transition: background .3s ease, transform .2s ease;
+    max-width: 180px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+}
+
+#destacados .btn:hover {
+    background: #e6e6e6;
+}
+
+/* Columna derecha */
+#destacados .slide__right {
+    position: relative;
+}
+
+#destacados .slide__img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Colores de fondo rápidos */
+#destacados .bg-verde {
+    background: #030303;
+}
+
+#destacados .bg-vino {
+    background: #0a0f08;
+}
+
+#destacados .bg-azul {
+    background: linear-gradient(135deg, #322820 0%, #463726 50%, #110202 100%);
+}
+
+/* Flechas */
+#destacados .nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+#destacados .nav button {
+    pointer-events: auto;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+}
+
+/* Puntos */
+#destacados .dots {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+#destacados .dots button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, .6);
+    cursor: pointer;
+}
+
+#destacados .dots button.active {
+    background: #fff;
+    width: 25px;
+    border-radius: 20px;
+}
+
+/* Responsive */
+@media(max-width:800px) {
+    #destacados .slide {
+        grid-template-columns: 1fr;
+    }
+
+    #destacados .slide__left {
+        height: 50%;
+    }
+
+    #destacados .slide__right {
+        height: 50%;
+    }
+}
+
+/* Configuraciones de boton de slider */
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #c5a46d;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #5f6723;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #ffffff;
+  }
+
+  .cta:hover span {
+    color: #000000;
+  }
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+
+/*Barra de Busqueda y Carrito*/
+/* ========== TOPBAR centrada y consistente ========== */
+#topbar{
+  padding: 24px 0;  /* 👉 aumenta aquí para dar más espacio externo arriba/abajo */
+}
+
+#topbar .topbar__wrap{
+  /* VARIABLES DE CONTROL DE TAMAÑO */
+  --ctrl-h: 64px;   /* 👉 altura estándar de todos los elementos de la barra */
+  --radius: 14px;   /* 👉 redondeo de bordes */
+
+  max-width: 140rem;   /* 👉 ancho máximo de toda la barra */
+  width: 140rem;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;   /* centra verticalmente */
+  gap: 16px;             /* 👉 espacio entre logo, buscador y botones */
+
+  background: var(--primarioOscuro);
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.15);
+
+  min-height: calc(var(--ctrl-h) + 26px);
+}
+
+/* Marca / Logo */
+#topbar .topbar__brand{
+  font-family: var(--fuentePrincipal);
+  color: var(--secundario);
+  text-decoration: none;
+  font-size: clamp(1.3rem, 2.6vw, 2.2rem); /* 👉 cambia aquí para agrandar texto del logo */
+  padding: 0 8px;
+  display:flex; align-items:center;
+}
+
+/* ===== BUSCADOR ===== */
+#topbar .topbar__search{
+  flex: 1;                            /* ocupa todo el espacio central */
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 10px;
+
+  height: var(--ctrl-h);               /* 👉 cambia --ctrl-h para hacerlo más alto */
+  padding: 0 12px 0 16px;              /* 👉 aumenta para más espacio interior */
+  background: #1b1b1b;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: var(--radius);
+}
+#topbar .topbar__search input{
+  height: 100%; 
+  border: 0; outline: 0;
+  background: transparent;
+  color: var(--blanco);
+  font-size: 2rem;                   /* 👉 cambia para hacer el texto de búsqueda más grande */
+  padding: 0; 
+}
+#topbar .topbar__search input::placeholder{
+  color: rgba(255,255,255,.6);
+  font-size: 2rem;                     /* 👉 placeholder más grande o pequeño */
+}
+
+/* Botón de lupa */
+#topbar .topbar__btn-search{
+  display: grid; place-items: center;
+  width: calc(var(--ctrl-h) - 10px);   /* 👉 cambia para hacerlo más ancho */
+  height: calc(var(--ctrl-h) - 10px);  /* 👉 cambia para hacerlo más alto */
+  border: 0; 
+  border-radius: calc(var(--radius) - 2px);
+  background: var(--secundario);
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: transform .15s ease, filter .2s ease;
+}
+#topbar .topbar__btn-search svg{ 
+  display:block; 
+  width: 22px; height: 22px;           /* 👉 cambia tamaño del ícono de lupa */
+}
+
+/* ===== BOTONES DE ACCIONES (carrito y usuario) ===== */
+#topbar .topbar__actions{
+  display: flex;
+  align-items: center;
+  gap: 12px;                           /* 👉 espacio entre los botones de la derecha */
+}
+#topbar .icon-btn{
+  display: grid; place-items: center;
+  width: var(--ctrl-h);                /* 👉 ancho de los botones */
+  height: var(--ctrl-h);               /* 👉 alto de los botones */
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: var(--radius);
+  background: #222; 
+  color: var(--blanco);
+  cursor: pointer;
+  transition: background .2s ease, transform .15s ease, border-color .2s ease;
+}
+#topbar .icon-btn svg{ 
+  width: 28px; height: 28px;           /* 👉 tamaño de los íconos (carrito/usuario) */
+  display:block; 
+}
+#topbar .icon-btn:hover{ 
+  background:#2a2a2a; 
+  border-color: rgba(255,255,255,.18); 
+}
+
+#topbar .icon-btn{
+  position: relative;     /* ⬅️ clave para que el badge se ancle al botón */
+  display: grid;
+  place-items: center;
+  width: var(--ctrl-h);
+  height: var(--ctrl-h);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: var(--radius);
+  background: #222;
+  color: var(--blanco);
+  cursor: pointer;
+  transition: background .2s ease, transform .15s ease, border-color .2s ease;
+  overflow: visible;       /* ⬅️ por si el badge sobresale */
+}
+
+/* Asegura que ningún estado quite la referencia */
+#topbar .icon-btn:active{
+  position: relative !important;
+}
+
+/* Badge: puedes dejar tu bloque tal cual; solo revisa top/right a gusto */
+#topbar .badge{
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  min-width: 22px;  /* 👉 tamaño del círculo contador*/
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--secundario);
+  color: #1a1a1a;
+  font-size: .9rem; /* 👉 tamaño del número dentro del badge */
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--primarioOscuro);
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 860px){
+  #topbar .topbar__brand{ display:none; } /* oculta logo en pantallas chicas */
+  #topbar .topbar__wrap{ gap: 12px; padding: 12px 16px; }
+  #topbar .topbar__wrap{ --ctrl-h: 56px; } /* 👉 altura menor en móviles */
+}
+
+
+
+/*Vista de Productos*/
+
+/* ===========================
+   PÁGINA DE PRODUCTO (aislada)
+   =========================== */
+#producto {
+    --card-bg: #fff;
+    --ink: #111;
+    --muted: #666;
+    --gold: var(--secundario);
+    --dark: var(--primarioOscuro);
+    margin: 2rem auto 4rem;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+#producto .producto__wrap {
+    display: grid;
+    grid-template-columns: 480px 1fr;
+    gap: 10%;
+}
+
+@media (max-width: 900px) {
+    #producto .producto__wrap {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Galería */
+#producto .galeria {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 1rem;
+}
+
+@media (max-width: 900px) {
+    #producto .galeria {
+        grid-template-columns: 90px 1fr;
+    }
+}
+
+#producto .galeria__thumbs {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+#producto .thumb {
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 0;
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+#producto .thumb.is-active {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--gold) 40%, transparent);
+}
+
+#producto .thumb img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Galería solo con imagen principal */
+#producto .galeria {
+    display: block;
+}
+
+#producto .galeria__principal {
+    position: relative;
+    margin: 0;
+    background: #000;
+    border-radius: 37px;
+    overflow: hidden;
+}
+
+#producto .galeria__principal img {
+    width: 100%;
+    height: 620px;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    #producto .galeria__principal img {
+        height: 420px;
+    }
+}
+/* badge informativo arriba izquierda 'Estado del producto' */
+#producto .badge-info {
+    position: absolute;
+    font-family: var(--fuentePrincipal);
+    top: 12px;
+    left: 12px;
+    background: rgba(255, 206, 0, .9);
+    color: #1a1a1a;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+#producto .fav {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .9);
+    border: 0;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+}
+
+/* Detalle */
+#producto .detalle__titulo {
+    font-family: var(--fuentePrincipal);
+    color: var(--gold);
+    font-size: clamp(2.2rem, 3.2vw, 3.4rem);
+    margin: .2rem 0 1rem;
+    text-align:  left;
+}
+
+#producto .detalle__precios {
+    display: flex;
+    gap: .8rem;
+    align-items: baseline;
+    margin-bottom: 1rem;
+}
+
+#producto .precio-actual {
+    font-family: var(--fuentePrincipal);
+    font-size: 3.3rem;
+    font-weight: 800;
+    color: var(--ink);
+}
+
+#producto .precio-anterior {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.9rem;
+    color: #c44;
+    text-decoration: line-through;
+    opacity: .85;
+}
+
+#producto .descuento {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #c44;
+}
+
+#producto .btn {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+}
+
+#producto .btn--pago {
+    background: #0FC37C;
+    color: #102;
+}
+
+#producto .btn--negro {
+    background: #111;
+    color: #fff;
+}
+
+#producto .btn--borde {
+    background: #fff;
+    color: #111;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+#producto .btn--pago:hover {
+    filter: brightness(.95);
+}
+
+#producto .btn--negro:hover {
+    filter: brightness(1.1);
+}
+
+#producto .btn--borde:hover {
+    background: #f7f7f7;
+}
+
+/* Descripción corta */
+#producto .detalle__desc {
+    color: var(--muted);
+    margin: .5rem 0 1.5rem;
+}
+
+/* Form comprar */
+#producto .comprar {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+/*Selector de tallas */
+
+.tabs {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 99px;
+}
+
+.tabs * {
+  z-index: 2;
+}
+
+.container input[type="radio"] {
+  display: none;
+}
+
+.tab {
+  font-family: var(--fuentePrincipal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 50px;
+  font-size: 2rem;
+  color: black;
+  font-weight: 500;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: color 0.15s ease-in;
+  margin-right: 2.15rem;
+  margin-left: 1.6rem;
+}
+
+.container input[type="radio"]:checked + label {
+  color: #185ee0;
+}
+
+.container input[type="radio"]:checked + label > .notification {
+  background-color: #185ee0;
+  color: #fff;
+  margin: 0px;
+}
+
+.container input[id="radio-1"]:checked ~ .glider {
+  transform: translateX(0);
+}
+
+.container input[id="radio-2"]:checked ~ .glider {
+  transform: translateX(100%);
+}
+
+.container input[id="radio-3"]:checked ~ .glider {
+  transform: translateX(200%);
+}
+
+/*Selector Deslizante*/
+.glider {
+  position: absolute;
+  display: flex;
+  height: 30px;
+  width: 85px;
+  background-color: #e6eef9;
+  z-index: 1;
+  border-radius: 99px;
+  transition: 0.25s ease-out;
+}
+
+@media (max-width: 700px) {
+ 
+  .tabs {
+    transform: scale(0.6);
+  }
+}
+
+/* Selector de tallas */
+
+#producto .campo {
+    display: block;
+}
+
+#producto .campo--full {
+    grid-column: 1 / -1;
+    max-width: 65%;
+}
+/* ===== Nuevo contador de unidades ===== */
+#numi.numi{
+  --h: 48px;                 /* altura del control */
+  --r: 12px;                 /* radio de borde */
+  --bd: 1px;                 /* grosor del borde */
+  --ink: #111;               /* color de texto */
+  --line: rgba(0,0,0,.22);   /* color borde */
+  --focus: rgba(197,164,109,.28); /* halo dorado (usa tu --secundario) */
+
+  display:inline-grid;
+  grid-template-columns: 44px minmax(70px, 110px) 44px;
+  align-items:center;
+  gap: 0;
+  height: var(--h);
+  border: var(--bd) solid var(--line);
+  border-radius: var(--r);
+  background:#fff;
+  overflow:hidden;
+  user-select: none;
+}
+
+#numi .numi__btn{
+  appearance:none; -webkit-appearance:none;
+  background:transparent;
+  border:0;
+  width: 44px; height: 100%;
+  display:grid; place-items:center;
+  font-size: 20px; line-height:1;
+  color: var(--ink);
+  cursor:pointer;
+  transition: background .2s ease, transform .06s ease;
+}
+#numi .numi__btn:hover{ background: rgba(0,0,0,.05); }
+#numi .numi__btn:active{ transform: translateY(1px); }
+
+#numi .numi__input{
+  width:100%; height:100%;
+  border:0; outline:0;
+  text-align:center;
+  font: 600 1.6rem/1.2 system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  color: var(--ink);
+  background: transparent;
+}
+#numi .numi__input::-webkit-outer-spin-button,
+#numi .numi__input::-webkit-inner-spin-button{ -webkit-appearance: none; margin:0; }
+
+#numi:focus-within{
+  box-shadow: 0 0 0 3px var(--focus);
+  border-color: color-mix(in srgb, var(--focus) 45%, transparent);
+}
+
+/* Sección descripción larga */
+#producto .descripcion {
+    margin-top: 1rem;
+}
+
+#producto .descripcion h2 {
+    font-family: var(--fuentePrincipal);
+    color: var(--gold);
+    margin-bottom: .6rem;
+    text-align: left;
+}
+
+#producto .descripcion p {
+    color: #333;
+}
+
+/*Boton de compra*/
+.buttonCompra {
+  --width: 100px;
+  --height: 35px;
+  --tooltip-height: 35px;
+  --tooltip-width: 90px;
+  --gap-between-tooltip-to-button: 18px;
+  --button-color: #222;
+  --tooltip-color: #fff;
+  width: 30%;
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  border-radius: 0.45em;
+  font-family: "Arial";
+  transition: background 0.3s;
+  margin-top: 12%;
+}
+/*etiqueta*/
+.buttonCompra::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: 55%;
+  height: 90%;
+  background-color: #555;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: .25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+  font-size: 1.3rem;
+}
+/*Trinagulo de etiqueta*/
+.buttonCompra::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #555;
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.buttonCompra::after,.buttonCompra::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonCompra-wrapper,.text,.icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+}
+
+.text {
+  top: 0
+}
+
+.text,.icon {
+  transition: top 0.5s;
+}
+
+.icon {
+  color: #fff;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.buttonCompra:hover {
+  background: #222;
+  cursor: pointer;
+}
+
+.buttonCompra:hover .text {
+  top: -100%;
+}
+
+.buttonCompra:hover .icon {
+  top: 0;
+}
+
+.buttonCompra:hover:before,.buttonCompra:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.buttonCompra:hover:after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+.buttonCompra:hover:before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}

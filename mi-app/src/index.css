@@ -1,0 +1,77 @@
+/* ========= 1) NORMALIZE / RESET (tu bloque original) ========= */
+/* (Pega aquí TODO el reset que me pasaste antes) */
+/* ... tu reset completo ... */
+/* import de fuente 'Staatliches' de google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+/* ========= 2) VARIABLES GLOBALES ========= */
+:root {
+  --primario: #f9f7f6;
+  --primarioOscuro: #1C1C1C;
+  --secundario: #c8a15f;
+  --secundarioOscuro: #000;
+  --blanco: #FFF;
+  --negro: #000;
+  --rojo: #980404;
+  --fuentePrincipal: 'Staatliches', cursive;
+  /* slider */
+  --alto-slider: 420px;
+  --radio: 14px;
+  --velocidad: 600ms;
+}
+
+/* ========= 3) BASE GLOBAL ========= */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *::before, *::after { box-sizing: inherit; }
+
+body {
+  background-color: var(--primario);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+a { text-decoration: none; 
+background-color: transparent;}
+p {
+  color: var(--rojo);
+  font-family: var(--fuentePrincipal);
+}
+
+/* Importante: NO fuerces altura global a todas las imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-style: none;
+}
+
+/* Titulares globales (usan tu fuente principal) */
+h1, h2, h3 {
+  text-align: center;
+  color: var(--secundario);
+  font-family: var(--fuentePrincipal);
+}
+h1 { font-size: 4rem; }
+h2 { font-size: 3.2rem; }
+h3 { font-size: 2.4rem; }
+
+/* Utilidades globales */
+.contenedor {
+  max-width: 155rem;
+  margin: 0 auto;
+  padding: 2rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* Grilla utilitaria (si la usas en varias vistas) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+@media (min-width: 768px) {
+  .grid { grid-template-columns: repeat(4, 1fr); }
+}

@@ -1,0 +1,255 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|c:\\users\\ingle\\onedrive\\escritorio\\emarketproyecto\\apiwebmarket\\apiwebmarket\\controllers\\carritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|solutionrelative:apiwebmarket\\controllers\\carritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|c:\\users\\ingle\\onedrive\\escritorio\\emarketproyecto\\apiwebmarket\\apiwebmarket\\dto\\carritoitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|solutionrelative:apiwebmarket\\dto\\carritoitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|c:\\users\\ingle\\onedrive\\escritorio\\emarketproyecto\\apiwebmarket\\apiwebmarket\\models\\articuloscarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|solutionrelative:apiwebmarket\\models\\articuloscarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|c:\\users\\ingle\\onedrive\\escritorio\\emarketproyecto\\apiwebmarket\\apiwebmarket\\dto\\producto_card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|solutionrelative:apiwebmarket\\dto\\producto_card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|c:\\users\\ingle\\onedrive\\escritorio\\emarketproyecto\\apiwebmarket\\apiwebmarket\\dto\\agregararticulocarritodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|solutionrelative:apiwebmarket\\dto\\agregararticulocarritodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|c:\\users\\ingle\\onedrive\\escritorio\\emarketproyecto\\apiwebmarket\\apiwebmarket\\dto\\productobusquedadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|solutionrelative:apiwebmarket\\dto\\productobusquedadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|c:\\users\\ingle\\onedrive\\escritorio\\emarketproyecto\\apiwebmarket\\apiwebmarket\\models\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|solutionrelative:apiwebmarket\\models\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|c:\\users\\ingle\\onedrive\\escritorio\\emarketproyecto\\apiwebmarket\\apiwebmarket\\models\\mercaucacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|solutionrelative:apiwebmarket\\models\\mercaucacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|c:\\users\\ingle\\onedrive\\escritorio\\emarketproyecto\\apiwebmarket\\apiwebmarket\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|solutionrelative:apiwebmarket\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|c:\\users\\ingle\\onedrive\\escritorio\\emarketproyecto\\apiwebmarket\\apiwebmarket\\controllers\\miprimeraapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|solutionrelative:apiwebmarket\\controllers\\miprimeraapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|c:\\users\\ingle\\onedrive\\escritorio\\emarketproyecto\\apiwebmarket\\apiwebmarket\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|solutionrelative:apiwebmarket\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|c:\\users\\ingle\\onedrive\\escritorio\\emarketproyecto\\apiwebmarket\\apiwebmarket\\dto\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|solutionrelative:apiwebmarket\\dto\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|c:\\users\\ingle\\onedrive\\escritorio\\emarketproyecto\\apiwebmarket\\apiwebmarket\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|solutionrelative:apiwebmarket\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|c:\\users\\ingle\\onedrive\\escritorio\\emarketproyecto\\apiwebmarket\\apiwebmarket\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DA29476C-F2CD-4879-939C-7C7B1D0E11A1}|ApiWebMarket\\ApiWebMarket.csproj|solutionrelative:apiwebmarket\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CarritoController.cs",
+              "DocumentMoniker": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\Controllers\\CarritoController.cs",
+              "RelativeDocumentMoniker": "ApiWebMarket\\Controllers\\CarritoController.cs",
+              "ToolTip": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\Controllers\\CarritoController.cs",
+              "RelativeToolTip": "ApiWebMarket\\Controllers\\CarritoController.cs",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAwwL8AAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T20:37:21.302Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AgregarArticuloCarritoDto.cs",
+              "DocumentMoniker": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\DTO\\AgregarArticuloCarritoDto.cs",
+              "RelativeDocumentMoniker": "ApiWebMarket\\DTO\\AgregarArticuloCarritoDto.cs",
+              "ToolTip": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\DTO\\AgregarArticuloCarritoDto.cs",
+              "RelativeToolTip": "ApiWebMarket\\DTO\\AgregarArticuloCarritoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T04:56:44.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Carrito.cs",
+              "DocumentMoniker": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\Models\\Carrito.cs",
+              "RelativeDocumentMoniker": "ApiWebMarket\\Models\\Carrito.cs",
+              "ToolTip": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\Models\\Carrito.cs",
+              "RelativeToolTip": "ApiWebMarket\\Models\\Carrito.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T04:53:55.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductoBusquedaDto.cs",
+              "DocumentMoniker": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\DTO\\ProductoBusquedaDto.cs",
+              "RelativeDocumentMoniker": "ApiWebMarket\\DTO\\ProductoBusquedaDto.cs",
+              "ToolTip": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\DTO\\ProductoBusquedaDto.cs",
+              "RelativeToolTip": "ApiWebMarket\\DTO\\ProductoBusquedaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T21:05:21.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MercaUcaContext.cs",
+              "DocumentMoniker": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\Models\\MercaUcaContext.cs",
+              "RelativeDocumentMoniker": "ApiWebMarket\\Models\\MercaUcaContext.cs",
+              "ToolTip": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\Models\\MercaUcaContext.cs",
+              "RelativeToolTip": "ApiWebMarket\\Models\\MercaUcaContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T20:43:26.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ArticulosCarrito.cs",
+              "DocumentMoniker": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\Models\\ArticulosCarrito.cs",
+              "RelativeDocumentMoniker": "ApiWebMarket\\Models\\ArticulosCarrito.cs",
+              "ToolTip": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\Models\\ArticulosCarrito.cs",
+              "RelativeToolTip": "ApiWebMarket\\Models\\ArticulosCarrito.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T20:41:03.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CarritoItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\DTO\\CarritoItemDto.cs",
+              "RelativeDocumentMoniker": "ApiWebMarket\\DTO\\CarritoItemDto.cs",
+              "ToolTip": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\DTO\\CarritoItemDto.cs",
+              "RelativeToolTip": "ApiWebMarket\\DTO\\CarritoItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T20:36:23.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "ApiWebMarket\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\Models\\Producto.cs",
+              "RelativeToolTip": "ApiWebMarket\\Models\\Producto.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAIBAwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T20:50:21.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MiPrimeraApi.cs",
+              "DocumentMoniker": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\Controllers\\MiPrimeraApi.cs",
+              "RelativeDocumentMoniker": "ApiWebMarket\\Controllers\\MiPrimeraApi.cs",
+              "ToolTip": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\Controllers\\MiPrimeraApi.cs",
+              "RelativeToolTip": "ApiWebMarket\\Controllers\\MiPrimeraApi.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T00:11:02.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "ApiWebMarket\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "ApiWebMarket\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAIwH0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T21:39:24.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthResponse.cs",
+              "DocumentMoniker": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\DTO\\AuthResponse.cs",
+              "RelativeDocumentMoniker": "ApiWebMarket\\DTO\\AuthResponse.cs",
+              "ToolTip": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\DTO\\AuthResponse.cs",
+              "RelativeToolTip": "ApiWebMarket\\DTO\\AuthResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T23:42:45.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Producto_card.cs",
+              "DocumentMoniker": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\DTO\\Producto_card.cs",
+              "RelativeDocumentMoniker": "ApiWebMarket\\DTO\\Producto_card.cs",
+              "ToolTip": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\DTO\\Producto_card.cs",
+              "RelativeToolTip": "ApiWebMarket\\DTO\\Producto_card.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T00:04:00.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiWebMarket\\appsettings.json",
+              "ToolTip": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\appsettings.json",
+              "RelativeToolTip": "ApiWebMarket\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-05T23:26:59.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ApiWebMarket\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\ingle\\OneDrive\\Escritorio\\EMarketProyecto\\ApiWebMarket\\ApiWebMarket\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ApiWebMarket\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABEAAAAAAAAAAABYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-05T23:26:45.284Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

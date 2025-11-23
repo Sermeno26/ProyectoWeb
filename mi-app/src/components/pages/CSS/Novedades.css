@@ -1,0 +1,199 @@
+/* destacados.css */
+/* ====== VARIABLES ====== */
+:root {
+  --alto-slider: 520px;
+  --radio: 16px;
+  --velocidad: .5s;
+}
+
+/* ====== SLIDER DESTACADOS ====== */
+#destacados {}
+
+/* Contenedor principal */
+#destacados .slider{
+  position: relative;
+  margin: 4rem auto;
+  border-radius: var(--radio);
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,.15);
+  background: #000;
+}
+
+/* Pista que se desplaza */
+#destacados .track{
+  display: flex;
+  transition: transform var(--velocidad) ease;
+  will-change: transform;
+}
+
+/* Cada slide ocupa el 100% del ancho del slider */
+#destacados .slide{
+  flex: 0 0 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: var(--alto-slider);
+}
+
+/* Columna izquierda */
+#destacados .slide__left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  color: #fff;
+}
+
+/* Tipografía interna */
+#destacados .slide__title{
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 700;
+  margin: 0 0 12px;
+  line-height: 1.2;
+  color: #fff;
+  font-size: 4rem;
+  letter-spacing: .5px;
+}
+#destacados .slide__text{
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1.9rem;
+  line-height: 1.5;
+  margin: 0 0 20px;
+  color: #f2f2f2;
+  text-align: center;
+}
+
+/* CTA */
+#destacados .cta{
+  position: relative;
+  margin: 0 auto;
+  padding: 12px 18px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  user-select: none;
+}
+#destacados .cta:before{
+  content:"";
+  position:absolute;
+  top: 0; left: 0;
+  display:block;
+  border-radius: 50px;
+  background: var(--secundario);
+  width: 45px; height: 45px;
+  transition: all .3s ease;
+}
+#destacados .cta span{
+  position: relative;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  color: #ffffff;
+}
+#destacados .cta svg{
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #5f6723;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all .3s ease;
+}
+#destacados .cta:hover:before{ width: 100%; background: #ffffff; }
+#destacados .cta:hover span{ color: #000; }
+#destacados .cta:hover svg{ transform: translateX(0); }
+#destacados .cta:active{ transform: scale(.98); }
+
+/* Columna derecha */
+#destacados .slide__right{ position: relative; }
+#destacados .slide__img{
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+/* Fondos rápidos */
+#destacados .bg-verde{ background: #030303; }
+#destacados .bg-vino{  background: #0a0f08; }
+#destacados .bg-azul{
+  background: linear-gradient(135deg, #322820 0%, #463726 50%, #110202 100%);
+}
+
+/* Controles */
+#destacados .nav{
+  position: absolute;
+  top: 50%; left: 0; right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+#destacados .nav button{
+  pointer-events: auto;
+  width: 40px; height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+}
+#destacados .nav button:focus-visible{
+  outline: 3px solid color-mix(in srgb, var(--secundario) 50%, transparent);
+  outline-offset: 2px;
+}
+#destacados .nav button[disabled]{
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+/* Dots */
+#destacados .dots{
+  position: absolute;
+  bottom: 15px; left: 0; right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+#destacados .dots .dot,
+#destacados .dots button{
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,.6);
+  cursor: pointer;
+}
+
+/* activo: soporta clase .active y aria-selected */
+#destacados .dots .dot.active,
+#destacados .dots button.active,
+#destacados .dots [aria-selected="true"]{
+  background: #fff;
+  width: 25px;
+  border-radius: 20px;
+}
+
+#destacados .dots button:focus-visible{
+  outline: 3px solid color-mix(in srgb, var(--secundario) 50%, transparent);
+  outline-offset: 3px;
+}
+
+/* Responsive */
+@media (max-width: 800px){
+  #destacados .slide{ grid-template-columns: 1fr; }
+  #destacados .slide__left{ height: 50%; padding: 24px; }
+  #destacados .slide__right{ height: 50%; position: relative; }
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce){
+  #destacados .track{ transition: none; }
+  #destacados .cta:before, #destacados .cta svg{ transition: none; }
+}

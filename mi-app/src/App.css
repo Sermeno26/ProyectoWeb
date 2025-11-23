@@ -1,0 +1,22 @@
+/* src/App.css */
+
+/* Espaciado general del contenido principal */
+main {
+  padding: 0.4rem 1.6rem;
+}
+
+/* Si quieres empujar el footer al fondo (layout de página completa) */
+/*
+#root, body, html { height: 100%; }
+#root { display: grid; grid-template-rows: auto 1fr auto; }
+main { width: 100%; }
+*/
+
+/* Helpers opcionales para títulos/secciones globales */
+.section {
+  margin: 3.2rem auto;
+}
+.section__title {
+  margin: 0 0 1.6rem;
+  text-align: center;
+}
